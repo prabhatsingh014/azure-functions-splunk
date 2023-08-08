@@ -66,25 +66,6 @@
                         }
                     ]
                 }
-            },
-            {
-                "name": "blobPublicAccess",
-                "label": "Blob Public Access",
-                "type": "Microsoft.Common.DropDown",
-                "toolTip": "Controls whether data in the container may be accessed publicly.",
-                "constraints": {
-                    "required": true,
-                    "allowedValues": [
-                        {
-                            "label": "False",
-                            "value": "false"
-                        },
-                        {
-                            "label": "True",
-                            "value": "true"
-                        }
-                    ]
-                }
             }
         ],
         "steps": [
@@ -601,7 +582,6 @@
         "outputs": {
             "storageAccountType": "[steps('basics').storageAccountType]",
             "storageAccountTLS": "[steps('basics').storageAccountTLS]",
-            "blobPublicAccess": "[steps('basics').blobPublicAccess]",
             "appName": "[steps('basics').appName]",
 
             "eventHubConnectionString": "[steps('appSettings').ehPolicyKeyApi.primaryConnectionString]",

@@ -33,13 +33,6 @@
                 "description": "Storage Account TLS version"
             }
         },
-        "blobPublicAccess": {
-            "type": "bool",
-            "defaultValue": false,
-            "metadata": {
-                "description": "Allow Blob Public Access"
-            }
-        },
         "eventHubConnectionString": {
             "type": "string",
             "metadata": {
@@ -249,7 +242,7 @@
             },
             "properties": {
                 "minimumTlsVersion": "[parameters('storageAccountTLS')]",
-                "allowBlobPublicAccess": "[parameters('blobPublicAccess')]"
+                "allowBlobPublicAccess": false
             }
         },
         {
