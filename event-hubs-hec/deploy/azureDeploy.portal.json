@@ -70,7 +70,21 @@
             {
                 "name": "blobPublicAccess",
                 "label": "Blob Public Access",
-                "type": "Microsoft.Common.CheckBox"
+                "type": "Microsoft.Common.DropDown",
+                "toolTip": "Controls whether data in the container may be accessed publicly.",
+                "constraints": {
+                    "required": true,
+                    "allowedValues": [
+                        {
+                            "label": "False",
+                            "value": "false"
+                        },
+                        {
+                            "label": "True",
+                            "value": "true"
+                        }
+                    ]
+                }
             }
         ],
         "steps": [
