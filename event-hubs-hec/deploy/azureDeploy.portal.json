@@ -66,6 +66,11 @@
                         }
                     ]
                 }
+            },
+            {
+                "name": "blobPublicAccess",
+                "label": "Blob Public Access",
+                "type": "Microsoft.Common.CheckBox"
             }
         ],
         "steps": [
@@ -582,6 +587,7 @@
         "outputs": {
             "storageAccountType": "[steps('basics').storageAccountType]",
             "storageAccountTLS": "[steps('basics').storageAccountTLS]",
+            "blobPublicAccess": "[steps('basics').blobPublicAccess]",
             "appName": "[steps('basics').appName]",
 
             "eventHubConnectionString": "[steps('appSettings').ehPolicyKeyApi.primaryConnectionString]",
